@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Header from './Header';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="[color-scheme:dark]">
       <head />
-      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
+      <body className="overflow-y-scroll p-4 bg-gray-1100 bg-[url('/grid.svg')]">
+        <Header />
         {children}
       </body>
     </html>
