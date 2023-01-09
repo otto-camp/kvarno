@@ -25,25 +25,24 @@
   },
   "dependencies": {
     "@heroicons/react": "1.0.6",
-    "@tailwindcss/forms": "0.5.3",
-    "framer-motion": "8.2.4",
+    "autoprefixer": "10.4.13",
     "next": "13.1.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "0.31.3",
+    "tailwindcss": "3.2.4"
   },
   "devDependencies": {
     "@types/ms": "0.7.31",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
-    "autoprefixer": "10.4.13",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.0",
     "lint-staged": "13.1.0",
     "postcss": "8.4.20",
     "prettier": "2.8.1",
     "prettier-plugin-tailwindcss": "0.2.1",
-    "tailwindcss": "3.2.4",
     "typescript": "4.9.4"
   }
 }

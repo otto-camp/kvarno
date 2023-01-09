@@ -5,6 +5,7 @@ const nextConfig = {
     // Required:
     appDir: true,
   },
+  reactStrictMode: true
 };
 
 module.exports = nextConfig;

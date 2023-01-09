@@ -7,9 +7,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="[color-scheme:dark]">
+    <html lang="en">
       <head />
-      <body className="overflow-y-scroll p-4 bg-gray-1100 bg-[url('/grid.svg')]">
+      <body className="overflow-y-scroll p-4 text-white antialiased bg-gray-1100 bg-[url('/grid.svg')]">
         <Header />
         {children}
       </body>

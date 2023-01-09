@@ -4,7 +4,7 @@ import avatar from '../public/avatar.jpg';
 
 function Header() {
   return (
-    <header className="container mx-auto">
+    <header className="max-w-6xl mx-auto">
       <div className="flex justify-between">
         <Link href="/" className="text-4xl font-bold ">
           Logo

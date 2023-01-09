@@ -5,14 +5,16 @@ module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
     './ui/**/*.{js,ts,jsx,tsx}',
   ],
   future: {
     hoverOnlyWhenSupported: true,
   },
+
+  darkMode: 'media',
   theme: {
     extend: {
-      // https://vercel.com/design/color
       colors: {
         gray: colors.zinc,
         'gray-1000': 'rgb(17,17,19)',
@@ -71,7 +73,11 @@ module.exports = {
           },
         },
       }),
+      fontSize: {
+        xxs: '0.5rem'
+      }
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [],
+
 };
