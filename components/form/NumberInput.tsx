@@ -26,8 +26,8 @@ function NumberInput({
       )}
       <input
         id={label}
-        type="number"
-        onChange={(e) => setVal(Number(e.currentTarget.value))}
+        type="text"
+        onChange={(e) => setVal(e.currentTarget.value)}
         defaultValue={defaultValue}
         className="w-full border rounded-lg py-2 px-3 text-black focus:border-blue-600 focus:outline-none"
       />

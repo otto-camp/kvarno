@@ -1,86 +1,91 @@
 'use client';
-import FileInput from '#/components/form/FileInput';
 import NumberInput from '#/components/form/NumberInput';
-import Select from '#/components/form/Select';
-import TextArea from '#/components/form/TextArea';
 import Image from 'next/image';
 import { SetStateAction, useState } from 'react';
 import image from '../../public/image1.jpg';
+import Card from '../../components/cards/Card';
+import TextInput from '#/components/form/TextInput';
+import { getConvertedClasses } from '#/utils/GetCSSFromTailwind';
+import borderColor from '#/public/borderColor.json';
+import border from '#/public/border.json';
+import Select from '#/components/form/Select';
 
 const options = ['Arial', 'Helvetica', 'Times New Roman', 'Verdana'];
+const bc = [
+  borderColor.table[0][2],
+  borderColor.table[1][2],
+  borderColor.table[2][2],
+  borderColor.table[3][2],
+];
+const b = [
+  border.table[0][1],
+  border.table[1][1],
+  border.table[2][1],
+  border.table[3][1],
+];
 
 function CreateForm() {
   const [option, setOption] = useState<string>(options[0]);
-  const [file, setFile] = useState<File | null>(null);
-  const [width, setWidth] = useState<number>(500);
-  const [height, setHeight] = useState<number>(500);
+  const [width, setWidth] = useState<string>('w-full');
+  const [height, setHeight] = useState<string>('h-[300px]');
+  const [backgroundColor, setBackgroundColor] = useState('bg-violet-400');
+  const [border, setBorder] = useState('');
+  const [borderColor, setBorderColor] = useState('');
+  const [borderRadius, setBorderRadius] = useState('');
+  const [shadow, setShadow] = useState('');
+  const [title, setTitle] = useState('HELLO WORLD');
+  const [titleClasses, setTitleClasses] = useState(
+    'text-6xl text-center font-black truncate',
+  );
   const [text, setText] = useState('');
-
   return (
-    <div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-        <Image
-          src={image}
-          alt="Template 1"
-          className="rounded-lg"
-          placeholder="blur"
-        />
-        <Image
-          src={image}
-          alt="Template 2"
-          className="rounded-lg"
-          placeholder="blur"
-        />
-        <Image
-          src={image}
-          alt="Template 3"
-          className="rounded-lg"
-          placeholder="blur"
-        />
-      </div>
-      <h2 className="text-xl font-bold mb-4">Customize Your Card</h2>
-      <form className="mb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <FileInput label="Choose a image" val={file} setVal={setFile} />
-          <Select val={option} setVal={setOption} options={options} />
-        </div>
-        <div className="mb-4">
-          <TextArea
-            label="Text"
-            placeholder="Write something..."
-            setVal={setText}
-            rows={6}
-          />
-        </div>
+    <>
+      {/* <TextInput
+        label="Title"
+        setVal={setTitle}
+        defaultValue={title}
+        val={title}
+      /> */}
+      {/* <NumberInput label="Height" setVal={setHeight} defaultValue={height} />
+      <NumberInput label="Width" setVal={setWidth} defaultValue={width} /> */}
+      {/* <TextInput
+        label="Border"
+        setVal={setBorder}
+        defaultValue={border}
+        val={border}
+      />
+      <TextInput
+        label="Border Color"
+        setVal={setBorderColor}
+        defaultValue={borderColor}
+        val={borderColor}
+      />
+      <TextInput
+        label="Border Radius"
+        setVal={setBorderRadius}
+        defaultValue={borderRadius}
+        val={borderRadius}
+      /> */}
+      <Select
+        label="Border Color"
+        options={bc}
+        val={borderColor}
+        setVal={setBorderColor}
+      />
+      <Select label="Border" options={b} val={border} setVal={setBorder} />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <NumberInput
-            setVal={setWidth}
-            defaultValue="500"
-            label="Width"
-            tooltip={true}
-            min="500"
-            max="800"
-          />
-          <NumberInput
-            setVal={setHeight}
-            defaultValue="350"
-            label="Height"
-            tooltip={true}
-            min="300"
-            max="500"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block font-bold mb-2">Decorations</label>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <Image src={image} alt="Decoration 1" className="rounded-lg" />
-            <Image src={image} alt="Decoration 2" className="rounded-lg" />
-            <Image src={image} alt="Decoration 3" className="rounded-lg" />
-          </div>
-        </div>
-      </form>
-    </div>
+      <Card
+        height={height}
+        width={width}
+        backgroundColor={backgroundColor}
+        title={title}
+        titleClasses={titleClasses}
+        border={border}
+        borderColor={borderColor}
+        borderRadius={borderRadius}
+        shadow={shadow}
+      />
+    </>
   );
 }
 
