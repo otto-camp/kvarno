@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, CSSProperties } from 'react';
+import {  useState } from 'react';
 import { ConvertToJSS } from '../../utils/ConvertToJSS';
 
 interface CardProps {
@@ -43,20 +43,34 @@ function Card({
   imageClasses,
   imagePlacement,
 }: CardProps) {
-  const card = useRef<HTMLElement | null>(null);
-
   const bc = ConvertToJSS(borderColor!);
   const b = ConvertToJSS(border!);
   const br = ConvertToJSS(borderRadius!);
   const h = ConvertToJSS(height!);
   const bg = ConvertToJSS(backgroundColor!);
+  const s = ConvertToJSS(shadow!);
+  const [styles, setStyles] = useState({
+    ...bc,
+    ...b,
+    ...br,
+    ...h,
+    ...bg,
+    ...s,
+  });
 
   return (
-    <div style={{ ...bc, ...b, ...br, ...h, ...bg }}>
-      <div className="flex items-center justify-center h-full">
-        <h1 className={titleClasses}>{title}</h1>
+    <>
+      <div style={{ ...bc, ...b, ...br, ...h, ...bg, ...s }}>
+        <div className="flex items-center justify-center h-full">
+          <h1 className={titleClasses}>{title}</h1>
+        </div>
       </div>
-    </div>
+      <textarea
+        readOnly
+        className="w-full bg-zinc-700 text-white rounded-lg mt-10"
+        value={`<div style={{${styles}}}></div>`}
+      />
+    </>
   );
 }
 

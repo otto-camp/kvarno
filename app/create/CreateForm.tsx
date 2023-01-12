@@ -1,12 +1,14 @@
 'use client';
 import { useState } from 'react';
 import Card from '../../components/cards/Card';
+import Select from '#/components/form/Select';
+
 import h from '#/public/height.json';
 import bgColor from '#/public/bgColor.json';
 import bc from '#/public/borderColor.json';
 import b from '#/public/border.json';
 import br from '#/public/borderRadius.json';
-import Select from '#/components/form/Select';
+import s from '#/public/shadow.json';
 
 function CreateForm() {
   const [width, setWidth] = useState<string>('w-full');
@@ -20,6 +22,7 @@ function CreateForm() {
   const [titleClasses, setTitleClasses] = useState(
     'text-6xl text-center font-black truncate',
   );
+
   return (
     <>
       <Select
@@ -29,7 +32,7 @@ function CreateForm() {
         setVal={setHeight}
       />
       <Select
-        label="backgroundColor"
+        label="Background Color"
         options={bgColor.table}
         val={backgroundColor}
         setVal={setBackgroundColor}
@@ -51,6 +54,12 @@ function CreateForm() {
         options={br.table}
         val={borderRadius}
         setVal={setBorderRadius}
+      />
+      <Select
+        label="Shadow"
+        options={s.table}
+        val={shadow}
+        setVal={setShadow}
       />
       <div className=" my-10">
         <Card
