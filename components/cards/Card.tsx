@@ -47,9 +47,12 @@ function Card({
 
   const bc = ConvertToJSS(borderColor!);
   const b = ConvertToJSS(border!);
+  const br = ConvertToJSS(borderRadius!);
+  const h = ConvertToJSS(height!);
+  const bg = ConvertToJSS(backgroundColor!);
 
   return (
-    <div className="border-4" style={{ ...bc, ...b }}>
+    <div style={{ ...bc, ...b, ...br, ...h, ...bg }}>
       <div className="flex items-center justify-center h-full">
         <h1 className={titleClasses}>{title}</h1>
       </div>

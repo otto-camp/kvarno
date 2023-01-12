@@ -11,10 +11,10 @@ function Select({ val, setVal, options, label }: SelectProps) {
         onChange={(e) => setVal(e.currentTarget.value)}
         value={val}
         className="border rounded-lg w-full py-2 px-3 text-black"
-        placeholder="Choose Text"
+        placeholder={label}
       >
         {options.map((o) => (
-          <option value={o} key={o}>
+          <option key={o} value={o}>
             {o}
           </option>
         ))}

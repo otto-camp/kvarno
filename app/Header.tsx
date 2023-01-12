@@ -16,6 +16,7 @@ function Header() {
             width={48}
             height={48}
             className="object-cover rounded-full"
+            priority
           />
         </Link>
       </div>

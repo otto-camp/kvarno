@@ -1,0 +1,122 @@
+{
+  "table": [
+    "border-radius: 0;",
+    "border-radius: 0.125rem;",
+    "border-radius: 0.25rem;",
+    "border-radius: 0.375rem;",
+    "border-radius: 0.5rem;",
+    "border-radius: 0.75rem;",
+    "border-radius: 1rem;",
+    "border-radius: 1.5rem;",
+    "border-radius: 9999px;",
+
+    "border-top-left-radius: 0;\nborder-top-right-radius: 0;",
+
+    "border-top-right-radius: 0;\nborder-bottom-right-radius: 0;",
+
+    "border-bottom-right-radius: 0;\nborder-bottom-left-radius: 0;",
+
+    "border-top-left-radius: 0;\nborder-bottom-left-radius: 0;",
+
+    "border-top-left-radius: 0.125rem;\nborder-top-right-radius: 0.125rem;",
+
+    "border-top-right-radius: 0.125rem;\nborder-bottom-right-radius: 0.125rem;",
+
+    "border-bottom-right-radius: 0.125rem;\nborder-bottom-left-radius: 0.125rem;",
+
+    "border-top-left-radius: 0.125rem;\nborder-bottom-left-radius: 0.125rem;",
+
+    "border-top-left-radius: 0.25rem;\nborder-top-right-radius: 0.25rem;",
+
+    "border-top-right-radius: 0.25rem;\nborder-bottom-right-radius: 0.25rem;",
+
+    "border-bottom-right-radius: 0.25rem;\nborder-bottom-left-radius: 0.25rem;",
+
+    "border-top-left-radius: 0.25rem;\nborder-bottom-left-radius: 0.25rem;",
+
+    "border-top-left-radius: 0.375rem;\nborder-top-right-radius: 0.375rem;",
+
+    "border-top-right-radius: 0.375rem;\nborder-bottom-right-radius: 0.375rem;",
+
+    "border-bottom-right-radius: 0.375rem;\nborder-bottom-left-radius: 0.375rem;",
+
+    "border-top-left-radius: 0.375rem;\nborder-bottom-left-radius: 0.375rem;",
+
+    "border-top-left-radius: 0.5rem;\nborder-top-right-radius: 0.5rem;",
+
+    "border-top-right-radius: 0.5rem;\nborder-bottom-right-radius: 0.5rem;",
+
+    "border-bottom-right-radius: 0.5rem;\nborder-bottom-left-radius: 0.5rem;",
+
+    "border-top-left-radius: 0.5rem;\nborder-bottom-left-radius: 0.5rem;",
+
+    "border-top-left-radius: 0.75rem;\nborder-top-right-radius: 0.75rem;",
+
+    "border-top-right-radius: 0.75rem;\nborder-bottom-right-radius: 0.75rem;",
+
+    "border-bottom-right-radius: 0.75rem;\nborder-bottom-left-radius: 0.75rem;",
+
+    "border-top-left-radius: 0.75rem;\nborder-bottom-left-radius: 0.75rem;",
+
+    "border-top-left-radius: 1rem;\nborder-top-right-radius: 1rem;",
+
+    "border-top-right-radius: 1rem;\nborder-bottom-right-radius: 1rem;",
+
+    "border-bottom-right-radius: 1rem;\nborder-bottom-left-radius: 1rem;",
+
+    "border-top-left-radius: 1rem;\nborder-bottom-left-radius: 1rem;",
+
+    "border-top-left-radius: 1.5rem;\nborder-top-right-radius: 1.5rem;",
+
+    "border-top-right-radius: 1.5rem;\nborder-bottom-right-radius: 1.5rem;",
+
+    "border-bottom-right-radius: 1.5rem;\nborder-bottom-left-radius: 1.5rem;",
+
+    "border-top-left-radius: 1.5rem;\nborder-bottom-left-radius: 1.5rem;",
+
+    "border-top-left-radius: 9999px;\nborder-top-right-radius: 9999px;",
+
+    "border-top-right-radius: 9999px;\nborder-bottom-right-radius: 9999px;",
+
+    "border-bottom-right-radius: 9999px;\nborder-bottom-left-radius: 9999px;",
+
+    "border-top-left-radius: 9999px;\nborder-bottom-left-radius: 9999px;",
+
+    "border-top-left-radius: 0;",
+    "border-top-right-radius: 0;",
+    "border-bottom-right-radius: 0;",
+    "border-bottom-left-radius: 0;",
+    "border-top-left-radius: 0.125rem;",
+    "border-top-right-radius: 0.125rem;",
+    "border-bottom-right-radius: 0.125rem;",
+    "border-bottom-left-radius: 0.125rem;",
+    "border-top-left-radius: 0.25rem;",
+    "border-top-right-radius: 0.25rem;",
+    "border-bottom-right-radius: 0.25rem;",
+    "border-bottom-left-radius: 0.25rem;",
+    "border-top-left-radius: 0.375rem;",
+    "border-top-right-radius: 0.375rem;",
+    "border-bottom-right-radius: 0.375rem;",
+    "border-bottom-left-radius: 0.375rem;",
+    "border-top-left-radius: 0.5rem;",
+    "border-top-right-radius: 0.5rem;",
+    "border-bottom-right-radius: 0.5rem;",
+    "border-bottom-left-radius: 0.5rem;",
+    "border-top-left-radius: 0.75rem;",
+    "border-top-right-radius: 0.75rem;",
+    "border-bottom-right-radius: 0.75rem;",
+    "border-bottom-left-radius: 0.75rem;",
+    "border-top-left-radius: 1rem;",
+    "border-top-right-radius: 1rem;",
+    "border-bottom-right-radius: 1rem;",
+    "border-bottom-left-radius: 1rem;",
+    "border-top-left-radius: 1.5rem;",
+    "border-top-right-radius: 1.5rem;",
+    "border-bottom-right-radius: 1.5rem;",
+    "border-bottom-left-radius: 1.5rem;",
+    "border-top-left-radius: 9999px;",
+    "border-top-right-radius: 9999px;",
+    "border-bottom-right-radius: 9999px;",
+    "border-bottom-left-radius: 9999px;"
+  ]
+}
