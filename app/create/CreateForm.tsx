@@ -1,80 +1,28 @@
 'use client';
 import { useState } from 'react';
-import Card from '../../components/cards/Card';
-import Select from '#/components/form/Select';
-
-import h from '#/public/height.json';
-import bgColor from '#/public/bgColor.json';
-import bc from '#/public/borderColor.json';
-import b from '#/public/border.json';
-import br from '#/public/borderRadius.json';
-import s from '#/public/shadow.json';
+import Card from '../../components/Card';
+import Menu from './Menu';
 
 function CreateForm() {
-  const [width, setWidth] = useState<string>('w-full');
-  const [height, setHeight] = useState<string>('');
-  const [backgroundColor, setBackgroundColor] = useState('');
-  const [border, setBorder] = useState('');
-  const [borderColor, setBorderColor] = useState('');
-  const [borderRadius, setBorderRadius] = useState('');
-  const [shadow, setShadow] = useState('');
-  const [title, setTitle] = useState('HELLO WORLD');
-  const [titleClasses, setTitleClasses] = useState(
-    'text-6xl text-center font-black truncate',
-  );
-
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [bgColor, setBgColor] = useState('#000');
   return (
-    <>
-      <Select
-        label="Height"
-        options={h.table}
-        val={height}
-        setVal={setHeight}
-      />
-      <Select
-        label="Background Color"
-        options={bgColor.table}
-        val={backgroundColor}
-        setVal={setBackgroundColor}
-      />
-      <Select
-        label="Border Color"
-        options={bc.table}
-        val={borderColor}
-        setVal={setBorderColor}
-      />
-      <Select
-        label="Border"
-        options={b.table}
-        val={border}
-        setVal={setBorder}
-      />
-      <Select
-        label="Border Radius"
-        options={br.table}
-        val={borderRadius}
-        setVal={setBorderRadius}
-      />
-      <Select
-        label="Shadow"
-        options={s.table}
-        val={shadow}
-        setVal={setShadow}
-      />
-      <div className=" my-10">
-        <Card
-          height={height}
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div className="lg:col-span-3">
+        <Card height={height} width={width} bgColor={bgColor} />
+      </div>
+      <div>
+        <Menu
           width={width}
-          backgroundColor={backgroundColor}
-          title={title}
-          titleClasses={titleClasses}
-          border={border}
-          borderColor={borderColor}
-          borderRadius={borderRadius}
-          shadow={shadow}
+          setWidth={setWidth}
+          height={height}
+          setHeight={setHeight}
+          bgColor={bgColor}
+          setBgColor={setBgColor}
         />
       </div>
-    </>
+    </div>
   );
 }
 
