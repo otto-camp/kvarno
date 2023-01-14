@@ -16,6 +16,7 @@ function BgColorSelect({
       </label>
       <select
         id="backgroundColor"
+        value={bgColor}
         onChange={(e) => setBgColor(e.target.value)}
         className="rounded-lg w-full px-2 py-1"
       >
@@ -27,6 +28,17 @@ function BgColorSelect({
           ></option>
         ))}
       </select>
+      <hr className="my-2" />
+      <label htmlFor="hexColor" className="block font-bold">
+        Hex Color or Color name
+      </label>
+      <input
+        id="hexColor"
+        type="text"
+        defaultValue={bgColor}
+        onChange={(e) => setBgColor(e.target.value)}
+        className="px-2 py-1 text-black w-full rounded-lg"
+      />
     </div>
   );
 }

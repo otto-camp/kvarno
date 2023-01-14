@@ -12,8 +12,7 @@ function Container({
   children: React.ReactNode;
 }) {
   let w = width === 0 ? 'width:100%' : `width:${width}px`;
-  width === 0 ? 'width:100%' : `height:${height}px`
-  let h = height === 0 ? 'height:auto' : `height:${height}px`
+  let h = height === 0 ? 'height:auto' : `height:${height}px`;
   let bg = `background-color:${bgColor}`;
 
   return (
