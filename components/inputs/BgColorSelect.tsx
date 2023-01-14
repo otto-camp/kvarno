@@ -35,7 +35,7 @@ function BgColorSelect({
       <input
         id="hexColor"
         type="text"
-        defaultValue={bgColor}
+        value={bgColor}
         onChange={(e) => setBgColor(e.target.value)}
         className="px-2 py-1 text-black w-full rounded-lg"
       />

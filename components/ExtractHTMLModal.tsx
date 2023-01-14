@@ -6,12 +6,16 @@ function ExtractHTMLModal({
   width,
   height,
   bgColor,
+  border,
+  radius,
   extractHTMLModal,
   setExtractHTMLModal,
 }: {
   width: number;
   height: number;
   bgColor: string;
+  border: number;
+  radius: number;
   extractHTMLModal: boolean;
   setExtractHTMLModal: Dispatch<SetStateAction<boolean>>;
 }) {
@@ -19,7 +23,7 @@ function ExtractHTMLModal({
     width === 0 ? 'width:100%' : `width:${width}px`
   };${
     height === 0 ? 'height:auto' : `height:${height}px`
-  };${`background-color:${bgColor}`};">
+  };${`background-color:${bgColor}`};${`border-width:${border}px`};${`border-radius:${radius}px`};">
     <h1 style="font-weight:900;font-size:3.75rem;line-height:1;text-align:center;">Hello World</h1>
 </div>`;
 
