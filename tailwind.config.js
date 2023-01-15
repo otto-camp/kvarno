@@ -15,6 +15,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#f6b300',
+        secondary: '#f7f6f6',
         gray: colors.zinc,
         'gray-1000': 'rgb(17,17,19)',
         'gray-1100': 'rgb(10,10,11)',
@@ -73,10 +75,9 @@ module.exports = {
         },
       }),
       fontSize: {
-        xxs: '0.5rem'
+        xxs: '0.5rem',
       },
     },
   },
   plugins: [],
-
 };

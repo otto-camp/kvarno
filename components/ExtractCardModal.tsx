@@ -1,40 +1,34 @@
+import { useCardContext } from '#/context/CardContext';
 import { Dialog, Transition } from '@headlessui/react';
 import { Dispatch, Fragment, SetStateAction, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-function ExtractHTMLModal({
-  width,
-  height,
-  bgColor,
-  border,
-  radius,
-  extractHTMLModal,
-  setExtractHTMLModal,
+function ExtractCardModal({
+  extractCardModal,
+  setExtractCardModal,
 }: {
-  width: number;
-  height: number;
-  bgColor: string;
-  border: number;
-  radius: number;
-  extractHTMLModal: boolean;
-  setExtractHTMLModal: Dispatch<SetStateAction<boolean>>;
+  extractCardModal: boolean;
+  setExtractCardModal: Dispatch<SetStateAction<boolean>>;
 }) {
+  const { width, height, bgColor, border, radius, borderColor } =
+    useCardContext();
+
   const value = `<div style="${
     width === 0 ? 'width:100%' : `width:${width}px`
   };${
     height === 0 ? 'height:auto' : `height:${height}px`
-  };${`background-color:${bgColor}`};${`border-width:${border}px`};${`border-radius:${radius}px`};">
+  };${`background-color:${bgColor}`};${`border-style:solid`};${`border-width:${border}px`};${`border-radius:${radius}px`};${`border-color:${borderColor}`};">
     <h1 style="font-weight:900;font-size:3.75rem;line-height:1;text-align:center;">Hello World</h1>
 </div>`;
 
   const [copied, setCopied] = useState(false);
 
   return (
-    <Transition appear show={extractHTMLModal} as={Fragment}>
+    <Transition appear show={extractCardModal} as={Fragment}>
       <Dialog
         as="div"
         className="relative z-10"
-        onClose={() => setExtractHTMLModal(false)}
+        onClose={() => setExtractCardModal(false)}
       >
         <Transition.Child
           as={Fragment}
@@ -71,7 +65,7 @@ function ExtractHTMLModal({
                   <button
                     type="button"
                     className="inline-flex justify-center rounded-md border border-black bg-transparent px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-gray-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                    onClick={() => setExtractHTMLModal(false)}
+                    onClick={() => setExtractCardModal(false)}
                   >
                     Close
                   </button>
@@ -85,7 +79,9 @@ function ExtractHTMLModal({
                     </button>
                   </CopyToClipboard>
                 </div>
-                {copied && <div className="text-black">Copied!</div>}
+                {copied && (
+                  <div className="text-black text-center mt-4">Copied!</div>
+                )}
               </Dialog.Panel>
             </Transition.Child>
           </div>
@@ -95,4 +91,4 @@ function ExtractHTMLModal({
   );
 }
 
-export default ExtractHTMLModal;
+export default ExtractCardModal;

@@ -8,19 +8,19 @@ function WidthInput({
   setWidth: Dispatch<SetStateAction<number>>;
 }) {
   return (
-    <div className="mx-2 my-2 border rounded-lg p-2">
-      <div className='flex justify-between items-center'>
-        <label htmlFor="width" className="font-bold text-lg">
-          Enter width
-        </label>
-        <span className='text-sm text-gray-200'>0 means full width</span>
-      </div>
+    <div className="relative mx-2 sm:w-full">
+      <label className="font-medium mb-2" htmlFor="Width">
+        Width:
+      </label>
+      <span className="underline">{width}</span>
       <input
-        id="width"
-        type="number"
-        defaultValue={width}
+        id="Width"
+        type="range"
+        className="block w-full accent-slate-100 bg-gray-200 rounded-lg cursor-pointer"
+        min={200}
+        max={800}
+        value={width}
         onChange={(e) => setWidth(Number(e.target.value))}
-        className="px-2 py-1 text-black w-full rounded-lg"
       />
     </div>
   );

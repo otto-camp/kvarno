@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from 'react';
 
 function HeightInput({
   height,
@@ -8,19 +8,19 @@ function HeightInput({
   setHeight: Dispatch<SetStateAction<number>>;
 }) {
   return (
-    <div className="mx-2 my-2 border rounded-lg p-2">
-      <div className="flex justify-between items-center">
-        <label htmlFor="height" className="font-bold text-lg">
-          Enter Height
-        </label>
-        <span className="text-sm text-gray-200">0 means fit content</span>
-      </div>
+    <div className="relative mx-2 sm:w-full">
+      <label className="font-medium mb-2" htmlFor="Height">
+        Height
+      </label>
+      <span className="underline">{height}</span>
       <input
-        id="height"
-        type="number"
-        defaultValue={height}
+        id="Height"
+        type="range"
+        className="block w-full accent-slate-100 bg-gray-200 rounded-lg cursor-pointer"
+        min={100}
+        max={300}
+        value={height}
         onChange={(e) => setHeight(Number(e.target.value))}
-        className="px-2 py-1 text-black w-full rounded-lg"
       />
     </div>
   );

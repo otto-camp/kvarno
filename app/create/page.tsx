@@ -1,9 +1,9 @@
-import CreateForm from './CreateForm';
+import CreateCard from './CreateCard';
 
 function page() {
   return (
     <main className="max-w-6xl mx-auto relative my-6">
-      <CreateForm />
+      <CreateCard />
     </main>
   );
 }
