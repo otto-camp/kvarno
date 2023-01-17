@@ -2,7 +2,7 @@ import CreateCard from './CreateCard';
 
 function page() {
   return (
-    <main className="max-w-6xl mx-auto relative my-6">
+    <main className="relative mx-auto my-6 max-w-6xl">
       <CreateCard />
     </main>
   );

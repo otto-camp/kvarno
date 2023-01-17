@@ -8,8 +8,8 @@ function BorderRadius({
   setRadius: Dispatch<SetStateAction<number>>;
 }) {
   return (
-    <div className="mx-2 mb-2 rounded-lg p-2">
-      <label htmlFor="radius" className="font-bold text-lg">
+    <div className="mx-2 mb-2 rounded-lg">
+      <label htmlFor="radius" className="font-medium">
         Enter radius
       </label>
 
@@ -18,7 +18,7 @@ function BorderRadius({
         type="number"
         defaultValue={radius}
         onChange={(e) => setRadius(Number(e.target.value))}
-        className="px-2 py-1 text-black w-full rounded-lg border border-black"
+        className="w-full rounded-lg border border-black px-2 py-1 text-black"
       />
     </div>
   );

@@ -9,19 +9,22 @@ function WidthInput({
 }) {
   return (
     <div className="relative mx-2 sm:w-full">
-      <label className="font-medium mb-2" htmlFor="Width">
+      <label className="mb-2 font-medium" htmlFor="Width">
         Width:
       </label>
       <span className="underline">{width}</span>
       <input
         id="Width"
         type="range"
-        className="block w-full accent-slate-100 bg-gray-200 rounded-lg cursor-pointer"
+        className="block w-full cursor-pointer rounded-lg bg-gray-200 accent-slate-100"
         min={200}
         max={800}
         value={width}
         onChange={(e) => setWidth(Number(e.target.value))}
       />
+      <button className="text-blue-900" onClick={() => setWidth(0)}>
+        Full width
+      </button>
     </div>
   );
 }

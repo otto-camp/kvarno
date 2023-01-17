@@ -10,15 +10,31 @@ function ExtractCardModal({
   extractCardModal: boolean;
   setExtractCardModal: Dispatch<SetStateAction<boolean>>;
 }) {
-  const { width, height, bgColor, border, radius, borderColor } =
-    useCardContext();
+  const {
+    width,
+    height,
+    bgColor,
+    border,
+    radius,
+    borderColor,
+    text,
+    textSize,
+    textWeight,
+    textColor,
+    textAlign,
+    textDecoration,
+    textDecorationStyle,
+    textDecorationColor,
+    textDecorationThickness,
+    textUnderlineOffset,
+  } = useCardContext();
 
   const value = `<div style="${
     width === 0 ? 'width:100%' : `width:${width}px`
   };${
     height === 0 ? 'height:auto' : `height:${height}px`
   };${`background-color:${bgColor}`};${`border-style:solid`};${`border-width:${border}px`};${`border-radius:${radius}px`};${`border-color:${borderColor}`};">
-    <h1 style="font-weight:900;font-size:3.75rem;line-height:1;text-align:center;">Hello World</h1>
+    <h2 style="color:${textColor};font-size:${textSize}px;font-weight:${textWeight};text-align:${textAlign};text-decoration:${textDecoration} ${textDecorationThickness}px ${textDecorationStyle} ${textDecorationColor};text-underline-offset:${textUnderlineOffset}px">Hello World</h2>
 </div>`;
 
   const [copied, setCopied] = useState(false);
@@ -56,7 +72,7 @@ function ExtractCardModal({
               <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
                 <textarea
                   readOnly
-                  className="w-full rounded-lg resize-none bg-gray-700 p-2"
+                  className="w-full resize-none rounded-lg bg-gray-700 p-2"
                   rows={6}
                   value={value}
                 />
@@ -80,7 +96,7 @@ function ExtractCardModal({
                   </CopyToClipboard>
                 </div>
                 {copied && (
-                  <div className="text-black text-center mt-4">Copied!</div>
+                  <div className="mt-4 text-center text-black">Copied!</div>
                 )}
               </Dialog.Panel>
             </Transition.Child>

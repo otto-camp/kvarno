@@ -1,10 +1,11 @@
 import Container from './Container';
+import Text from './Text';
 
 function Card() {
   return (
-    <div className="overflow-auto h-[300px] mx-auto">
+    <div className="mx-auto h-[300px] overflow-auto">
       <Container>
-        <h1 className="font-black text-center">Hello World</h1>
+        <Text />
       </Container>
     </div>
   );

@@ -9,19 +9,22 @@ function HeightInput({
 }) {
   return (
     <div className="relative mx-2 sm:w-full">
-      <label className="font-medium mb-2" htmlFor="Height">
+      <label className="mb-2 font-medium" htmlFor="Height">
         Height
       </label>
       <span className="underline">{height}</span>
       <input
         id="Height"
         type="range"
-        className="block w-full accent-slate-100 bg-gray-200 rounded-lg cursor-pointer"
+        className="block w-full cursor-pointer rounded-lg bg-gray-200 accent-slate-100"
         min={100}
         max={300}
         value={height}
         onChange={(e) => setHeight(Number(e.target.value))}
       />
+      <button className="text-blue-900" onClick={() => setHeight(300)}>
+        Full Height
+      </button>
     </div>
   );
 }

@@ -8,24 +8,27 @@ function BorderColors({
   setBorderColor: Dispatch<SetStateAction<string>>;
 }) {
   return (
-    <div className="mx-4 mt-6 mb-2 rounded-lg px-2 py-1 flex flex-row justify-between border border-black bg-white cursor-pointer">
-      <label htmlFor="Border Color" className="font-medium w-full">
-        {borderColor === '#000000' ? 'Select color' : borderColor}
-      </label>
-      <div className="relative">
-        <input
-          type="color"
-          value={borderColor}
-          onChange={(e) => setBorderColor(e.target.value)}
-          id="Border Color"
-          className="opacity-0"
-        />
-        <div
-          style={{ backgroundColor: borderColor }}
-          className="absolute top-0 right-0 w-2/3 h-full rounded-full z-10 pointer-events-none"
-        />
+    <>
+      <p className="mx-2 font-medium">Border Color</p>
+      <div className="mx-2 my-2 mb-2 flex cursor-pointer flex-row justify-between rounded-lg border border-black bg-white px-2 py-1">
+        <label htmlFor="Border Color" className="w-full font-medium">
+          {borderColor}
+        </label>
+        <div className="relative">
+          <input
+            type="color"
+            value={borderColor}
+            onChange={(e) => setBorderColor(e.target.value)}
+            id="Border Color"
+            className="opacity-0"
+          />
+          <div
+            style={{ backgroundColor: borderColor }}
+            className="pointer-events-none absolute top-0 right-0 z-10 h-full w-2/3 rounded-full"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

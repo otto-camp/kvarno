@@ -8,8 +8,8 @@ function BorderInput({
   setBorder: Dispatch<SetStateAction<number>>;
 }) {
   return (
-    <div className="mx-2 my-2 rounded-lg p-2">
-      <label htmlFor="border" className="font-bold text-lg">
+    <div className="mx-2 my-2 rounded-lg">
+      <label htmlFor="border" className="font-medium">
         Enter Border
       </label>
 
@@ -18,7 +18,7 @@ function BorderInput({
         type="number"
         defaultValue={border}
         onChange={(e) => setBorder(Number(e.target.value))}
-        className="px-2 py-1 text-black w-full rounded-lg border border-black"
+        className="w-full rounded-lg border border-black px-2 py-1 text-black"
       />
     </div>
   );

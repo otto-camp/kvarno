@@ -5,25 +5,25 @@ import logo from '#/public/logo.png';
 
 function Header() {
   return (
-    <header className="max-w-6xl mx-auto bg-gray-800 rounded-full px-4 py-2">
-      <div className="flex justify-between items-center">
-        <Link href="/" className="p-1 bg-gray-600 rounded-full">
+    <header className="mx-auto max-w-6xl rounded-full bg-gray-800 px-4 py-2">
+      <div className="flex items-center justify-between">
+        <Link href="/" className="rounded-full bg-gray-600 p-1">
           <Image
             src={logo}
             alt="Kvarno"
             width={48}
             height={48}
-            className="object-cover rounded-full"
+            className="rounded-full object-cover"
             priority
           />
         </Link>
-        <Link href={`/profile`} className="p-1 bg-gray-600 rounded-full">
+        <Link href={`/profile`} className="rounded-full bg-gray-600 p-1">
           <Image
             src={avatar}
             alt="avatar"
             width={48}
             height={48}
-            className="object-cover rounded-full"
+            className="rounded-full object-cover"
             priority
           />
         </Link>
