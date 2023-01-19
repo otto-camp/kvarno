@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main className="container relative mx-auto px-4 py-8">
+    <main className="relative px-4 py-8">
       <h1 className="mb-8 text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:text-8xl">
         Create Your Own Card
       </h1>

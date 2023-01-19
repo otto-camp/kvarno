@@ -1,0 +1,40 @@
+{
+  "name": "Kvarno: Your Design Friend",
+  "short_name": "Kvarno",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "rgb(10,10,11)",
+  "display": "standalone",
+  "id": "/",
+  "start_url": "/",
+  "shortcuts": [
+    {
+      "name": "Create a Card",
+      "short_name": "Create Card",
+      "description": "Create a Card with multiple style options",
+      "url": "/create",
+      "icons": [{ "src": "/android-chrome-512x512.png", "sizes": "512x512" }]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import logo from '#/public/logo.png';
 
 function Header() {
   return (
-    <header className="mx-auto max-w-6xl rounded-full bg-gray-800 px-4 py-2">
+    <header className="rounded-lg bg-gray-800 px-4 py-2">
       <div className="flex items-center justify-between">
         <Link href="/" className="rounded-full bg-gray-600 p-1">
           <Image

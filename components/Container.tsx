@@ -22,6 +22,7 @@ function Container({ children }: { children: React.ReactNode }) {
         ConvertToJSS(r),
         ConvertToJSS(bc),
       )}
+      className="m-auto"
     >
       {children}
     </div>

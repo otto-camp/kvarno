@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] p-4 text-white antialiased">
+      <body className="overflow-y-scroll bg-gray-1100 p-4 text-white antialiased">
         <Header />
         {children}
       </body>
