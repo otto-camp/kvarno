@@ -21,6 +21,7 @@
     "@headlessui/react": "1.7.7",
     "@heroicons/react": "1.0.6",
     "autoprefixer": "10.4.13",
+    "html-to-image": "1.11.4",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",

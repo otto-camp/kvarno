@@ -24,7 +24,7 @@ function BorderColors({
           />
           <div
             style={{ backgroundColor: borderColor }}
-            className="pointer-events-none absolute top-0 right-0 z-10 h-full w-2/3 rounded-full"
+            className="pointer-events-none absolute top-0 right-0 z-10 h-full border border-black w-[30px] rounded-lg"
           />
         </div>
       </div>

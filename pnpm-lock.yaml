@@ -11,6 +11,7 @@ specifiers:
   autoprefixer: 10.4.13
   eslint: 8.30.0
   eslint-config-next: 13.1.0
+  html-to-image: 1.11.4
   lint-staged: 13.1.0
   next: 13.1.1
   postcss: 8.4.20
@@ -29,6 +30,7 @@ dependencies:
   '@headlessui/react': 1.7.7_biqbaboplfbrettd7655fr4n2y
   '@heroicons/react': 1.0.6_react@18.2.0
   autoprefixer: 10.4.13_postcss@8.4.20
+  html-to-image: 1.11.4
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0_react@18.2.0
@@ -1558,6 +1560,10 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+
+  /html-to-image/1.11.4:
+    resolution: {integrity: sha512-I6jeGpjSI/pea+p/8q6HAWPxptZkEYaZ40ZLnpCHuhCJJnUHQ/YzMEQMNY/KMdPZJ4+GJIwo9dnJy76eW9p9cg==}
+    dev: false
 
   /human-signals/3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}

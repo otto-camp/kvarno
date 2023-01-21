@@ -1,5 +1,5 @@
-import { ConvertToJSS } from '#/utils/ConvertToJSS';
-import { useCardContext } from '../context/CardContext';
+import { ConvertToJSS } from '#/libs/ConvertToJSS';
+import { useCardContext } from '../../context/CardContext';
 
 function Container({ children }: { children: React.ReactNode }) {
   const { width, height, bgColor, border, radius, borderColor } =

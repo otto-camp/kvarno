@@ -1,5 +1,5 @@
-import { ConvertToJSS } from '#/utils/ConvertToJSS';
-import { useCardContext } from '../context/CardContext';
+import { ConvertToJSS } from '#/libs/ConvertToJSS';
+import { useCardContext } from '../../context/CardContext';
 function Text() {
   const {
     text,

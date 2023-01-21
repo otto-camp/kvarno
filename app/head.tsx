@@ -7,12 +7,38 @@ export default function Head() {
         name="google-site-verification"
         content="UfExZvP8OMttLFbO1FiDBWJe9aKIqYcnaFQYu-nc3iY"
       />
-      <title>Kvarno</title>
+      <title>Kvarno — Your Design Buddy</title>
+      <meta name="title" content="Kvarno — Your Design Buddy" />
       <meta
         name="description"
-        content="A playground to explore new Next.js 13 app directory features such as nested layouts, instant loading states, streaming, and component level data fetching."
+        content="Discover the ultimate CSS and HTML tools for effortless customization and maximum compatibility. Our user-friendly tools make web design a breeze and take the hassle out of creating responsive, cross-browser compatible websites."
+      />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://kvarno.netlify.app/" />
+      <meta property="og:title" content="Kvarno — Your Design Buddy" />
+      <meta
+        property="og:description"
+        content="Discover the ultimate CSS and HTML tools for effortless customization and maximum compatibility. Our user-friendly tools make web design a breeze and take the hassle out of creating responsive, cross-browser compatible websites."
+      />
+      <meta
+        property="og:image"
+        content="/logo.png"
+      />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://kvarno.netlify.app/" />
+      <meta property="twitter:title" content="Kvarno — Your Design Buddy" />
+      <meta
+        property="twitter:description"
+        content="Discover the ultimate CSS and HTML tools for effortless customization and maximum compatibility. Our user-friendly tools make web design a breeze and take the hassle out of creating responsive, cross-browser compatible websites."
+      />
+      <meta
+        property="twitter:image"
+        content="/logo.png"
       />
       <link rel="manifest" href="/manifest.json" />
+      
     </>
   );
 }
