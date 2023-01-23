@@ -21,10 +21,7 @@ export default function Head() {
         property="og:description"
         content="Discover the ultimate CSS and HTML tools for effortless customization and maximum compatibility. Our user-friendly tools make web design a breeze and take the hassle out of creating responsive, cross-browser compatible websites."
       />
-      <meta
-        property="og:image"
-        content="/logo.png"
-      />
+      <meta property="og:image" content="/logo.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://kvarno.netlify.app/" />
@@ -33,12 +30,9 @@ export default function Head() {
         property="twitter:description"
         content="Discover the ultimate CSS and HTML tools for effortless customization and maximum compatibility. Our user-friendly tools make web design a breeze and take the hassle out of creating responsive, cross-browser compatible websites."
       />
-      <meta
-        property="twitter:image"
-        content="/logo.png"
-      />
+      <meta property="twitter:image" content="/logo.png" />
+      <link rel="canonical" href="https://kvarno.netlify.app/" />
       <link rel="manifest" href="/manifest.json" />
-      
     </>
   );
 }

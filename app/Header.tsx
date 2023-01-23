@@ -1,9 +1,20 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import avatar from '../public/avatar.jpg';
 import logo from '#/public/logo.png';
+import { supabase } from '#/libs/SupabaseClient';
 
 function Header() {
+  const d = async () => {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    console.log(user);
+  };
+  d();
+  console.log(12);
+
   return (
     <header className="rounded-lg bg-gray-800 px-4 py-2">
       <div className="flex items-center justify-between">

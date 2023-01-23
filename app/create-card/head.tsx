@@ -34,6 +34,7 @@ export default function Head() {
       />
       <meta property="twitter:image" content="/logo.png" />
       <link rel="manifest" href="/manifest.json" />
+      <link rel="canonical" href="https://kvarno.netlify.app/create-card" />
     </>
   );
 }
