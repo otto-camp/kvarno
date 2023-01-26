@@ -3,46 +3,29 @@ xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 xmlns:xhtml="http://www.w3.org/1999/xhtml"
  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    <url>
-    <loc>https://kvarno.netlify.app/create-card</loc>
-    <lastmod>2023-01-24T19:37:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    </url>
-    <url>
-    <loc>https://kvarno.netlify.app/create-gradient</loc>
-    <lastmod>2023-01-24T19:37:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    </url>
-    <url>
-    <loc>https://kvarno.netlify.app/color-mixer</loc>
-    <lastmod>2023-01-26T22:30:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    </url>
-    <url>
+  <url>
     <loc>https://kvarno.netlify.app/</loc>
-    <lastmod>2023-01-24T19:37:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2023-01-26T19:35:54+00:00</lastmod>
+    <priority>1.00</priority>
     </url>
     <url>
     <loc>https://kvarno.netlify.app/profile</loc>
-    <lastmod>2023-01-24T19:37:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2023-01-26T19:35:54+00:00</lastmod>
+    <priority>0.80</priority>
     </url>
     <url>
-    <loc>https://kvarno.netlify.app/server/pages/404</loc>
-    <lastmod>2023-01-24T19:37:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://kvarno.netlify.app/create-card</loc>
+    <lastmod>2023-01-26T19:35:54+00:00</lastmod>
+    <priority>0.80</priority>
     </url>
     <url>
-    <loc>https://kvarno.netlify.app/server/pages/500</loc>
-    <lastmod>2023-01-24T19:37:38Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://kvarno.netlify.app/create-gradient</loc>
+    <lastmod>2023-01-26T19:35:54+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://kvarno.netlify.app/color-mixer</loc>
+    <lastmod>2023-01-26T19:35:54+00:00</lastmod>
+    <priority>0.80</priority>
     </url>
     </urlset>
