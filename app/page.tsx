@@ -17,6 +17,12 @@ export default function Page() {
         >
           Create Gradient
         </a>
+        <a
+          className="cursor-pointer whitespace-nowrap rounded-lg bg-gray-800 py-2 px-4 text-3xl font-semibold text-violet-50"
+          href="/color-mixer"
+        >
+          Color Mixer
+        </a>
       </div>
     </main>
   );

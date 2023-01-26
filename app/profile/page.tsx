@@ -1,13 +1,9 @@
-'use client';
-import { supabase } from '#/libs/SupabaseClient';
-import React from 'react';
-
-function page() {
+function Profile() {
   return (
-    <main>
-      <button>SignUp</button>
+    <main className="my-6">
+      <button>login</button>
     </main>
   );
 }
 
-export default page;
+export default Profile;
