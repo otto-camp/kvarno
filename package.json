@@ -2,13 +2,14 @@
   "name": "kvarno",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "next build sitemap",
     "dev": "next dev",
     "lint": "next lint",
     "lint-staged": "lint-staged",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "start": "next start",
+    "sitemap": "next-sitemap --config next-sitemap-config.js",
     "test": "yarn prettier && yarn lint"
   },
   "git": {
@@ -44,6 +45,7 @@
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.0",
     "lint-staged": "13.1.0",
+    "next-sitemap": "3.1.47",
     "postcss": "8.4.20",
     "prettier": "2.8.1",
     "prettier-plugin-tailwindcss": "0.2.1",
