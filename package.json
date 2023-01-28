@@ -2,7 +2,7 @@
   "name": "kvarno",
   "private": true,
   "scripts": {
-    "build": "next build sitemap",
+    "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "lint-staged": "lint-staged",
