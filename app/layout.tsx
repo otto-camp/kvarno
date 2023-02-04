@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Footer from './Footer';
 import Header from './Header';
 
 export default function RootLayout({
@@ -11,15 +12,8 @@ export default function RootLayout({
       <head />
       <body className="overflow-y-scroll bg-gray-1100 p-4 text-white antialiased">
         <Header />
-        {children}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-P7J4MD8"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          ></iframe>
-        </noscript>
+        <div className="mx-auto max-w-6xl">{children}</div>
+        <Footer />
       </body>
     </html>
   );

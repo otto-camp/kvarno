@@ -54,7 +54,7 @@ function CreateGradient() {
             secondColorPosition={secondColorPosition}
             setSecondColorPosition={setSecondColorPosition}
           />
-          <div className="mb-2 sm:grid sm:grid-cols-2">
+          <div className="mb-2 sm:grid sm:grid-cols-3">
             <TypeInput type={type} setType={setType} />
             <DegreeInput degree={degree} setDegree={setDegree} type={type} />
           </div>
@@ -63,7 +63,7 @@ function CreateGradient() {
               setFirstColor={setFirstColor}
               setSecondColor={setSecondColor}
             />
-            <GetCssButton divRef={ref}/>
+            <GetCssButton divRef={ref} />
           </div>
         </div>
       </div>

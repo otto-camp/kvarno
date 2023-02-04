@@ -1,6 +1,6 @@
 import CreateGradient from './CreateGradient';
 
-function CreateGradientPage() {
+function Page() {
   return (
     <main className="my-6">
       <CreateGradient />
@@ -8,4 +8,4 @@ function CreateGradientPage() {
   );
 }
 
-export default CreateGradientPage;
+export default Page;

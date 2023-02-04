@@ -1,6 +1,6 @@
-import ColorMixer from "./ColorMixer";
+import ColorMixer from './ColorMixer';
 
-function ColorMixerPage() {
+function Page() {
   return (
     <main className="my-6">
       <ColorMixer />
@@ -8,4 +8,4 @@ function ColorMixerPage() {
   );
 }
 
-export default ColorMixerPage;
+export default Page;

@@ -8,7 +8,6 @@ function RandomButton({
   setFirstColor: Dispatch<SetStateAction<string>>;
   setSecondColor: Dispatch<SetStateAction<string>>;
 }) {
-  
   return (
     <button
       onClick={() => {

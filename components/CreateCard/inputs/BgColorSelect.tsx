@@ -24,7 +24,7 @@ function BgColorSelect({
           />
           <div
             style={{ backgroundColor: bgColor }}
-            className="pointer-events-none absolute top-0 right-0 z-10 h-full border border-black w-[30px] rounded-lg"
+            className="pointer-events-none absolute top-0 right-0 z-10 h-full w-[30px] rounded-lg border border-black"
           />
         </div>
       </div>

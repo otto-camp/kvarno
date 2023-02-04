@@ -1,6 +1,6 @@
 import CreateCard from './CreateCard';
 
-function CreateCardPage() {
+function Page() {
   return (
     <main className="relative my-6">
       <CreateCard />
@@ -8,4 +8,4 @@ function CreateCardPage() {
   );
 }
 
-export default CreateCardPage;
+export default Page;

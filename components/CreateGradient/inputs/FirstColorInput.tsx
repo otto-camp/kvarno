@@ -27,7 +27,7 @@ function FirstColorSelect({
 
   return (
     <div className="grid grid-cols-3">
-      <div className='col-span-2'>
+      <div className="col-span-2">
         <p className="mx-2 mb-2 font-medium">First Color</p>
         <div className="mx-2 my-2 flex cursor-pointer flex-row justify-between rounded-lg border border-black bg-white px-2 py-1">
           <label htmlFor="First Color" className="w-full font-medium">
@@ -62,7 +62,7 @@ function FirstColorSelect({
             onChange={(e) =>
               setFirstColorPosition(Number(e.currentTarget.value))
             }
-            className="w-full text-center border border-black px-2 py-1.5 rounded-lg"
+            className="w-full rounded-lg border border-black px-2 py-1.5 text-center"
           >
             {options.map((o) => (
               <option key={o} value={o}>

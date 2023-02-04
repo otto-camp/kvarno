@@ -8,7 +8,7 @@ function TypeInput({
   setType: Dispatch<SetStateAction<string>>;
 }) {
   return (
-    <div className="mx-2 mb-2 rounded-lg py-1">
+    <div className="col-span-2 mx-2 mb-2 rounded-lg py-1">
       <label htmlFor="First Color Position" className="mb-1 block font-medium">
         Position
       </label>

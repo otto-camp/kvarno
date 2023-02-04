@@ -1,5 +1,4 @@
 module.exports = {
-    siteUrl: 'https://kvarno.netlify.app/',
-    generateRobotsTxt: true,
-
-}
+  siteUrl: 'https://kvarno.netlify.app/',
+  generateRobotsTxt: true,
+};
