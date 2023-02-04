@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://kvarno.netlify.app/
-
 # Sitemaps
 Sitemap: https://kvarno.netlify.app/sitemap.xml
