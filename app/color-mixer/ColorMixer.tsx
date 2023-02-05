@@ -20,9 +20,9 @@ function ColorMixer() {
         className="h-[200px] w-full rounded-lg border sm:h-[600px] sm:w-2/5"
         style={{ backgroundColor: firstColor }}
       >
-        <div className="flex h-[200px] w-full cursor-pointer items-center justify-center sm:h-[600px]">
-          <div className="relative mx-2 my-2 w-fit rounded-lg border border-black bg-white px-2 py-1">
-            <label htmlFor="First Color" className="text-black">
+        <div className="flex h-[200px] w-full items-center justify-center sm:h-[600px]">
+          <div className="relative mx-2 cursor-pointer my-2 rounded-lg border border-black bg-white px-2 py-1">
+            <label htmlFor="First Color" className="text-black cursor-pointer">
               {firstColor}
             </label>
             <input
@@ -62,7 +62,7 @@ function ColorMixer() {
         className="flex h-[200px] w-full items-center justify-center rounded-lg border sm:h-[600px] sm:w-2/5"
         style={{ backgroundColor: secondColor }}
       >
-        <div className="relative mx-2 my-2 w-fit cursor-pointer rounded-lg border border-black bg-white px-2 py-1">
+        <div className="relative mx-2 my-2 rounded-lg border border-black bg-white px-2 py-1">
           <label htmlFor="Second Color" className="cursor-pointer text-black">
             {secondColor}
           </label>

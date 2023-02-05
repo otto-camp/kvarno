@@ -5,9 +5,11 @@ import invert from 'invert-color';
 import Link from 'next/link';
 
 import { useMemo, useState } from 'react';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 export default function ColorPicker() {
   const [color, setColor] = useState('#FF00FF');
+  const [copy, setCopy] = useState(false);
 
   const colorInvert = useMemo(() => {
     const isValidHex = /^#[0-9A-F]{6}$/i.test(color);
@@ -47,12 +49,20 @@ export default function ColorPicker() {
         <button onClick={randomColor} className="absolute top-0 right-0">
           Random
         </button>
-        <h2
-          className="text-center text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
-          style={{ color: colorInvert }}
-        >
-          {color}
-        </h2>
+        <CopyToClipboard text={color}>
+          <h2
+            className="text-center text-3xl cursor-pointer font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+            style={{ color: colorInvert }}
+            onClick={() => {
+              setCopy(true);
+              setTimeout(() => {
+                setCopy(false);
+              }, 1000);
+            }}
+          >
+            {copy ? 'copied' : color}
+          </h2>
+        </CopyToClipboard>
       </div>
       <div className="flex w-full justify-center">
         <Link

@@ -7,8 +7,9 @@ export default function Page() {
           Color Picker
         </h1>
         <p className="mx-auto mt-3 max-w-lg text-center text-lg text-gray-300">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-          tenetur. Voluptates, labore!
+          Obtain valuable information about colors including color combinations,
+          libraries for color matching, and conversions between RGB, HSB, HSL
+          and other color models.
         </p>
       </div>
       <ColorPicker />

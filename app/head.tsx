@@ -35,6 +35,7 @@ export default function Head() {
       <meta property="twitter:image" content="/logo.png" />
       <link rel="canonical" href="https://kvarno.netlify.app/" />
       <link rel="manifest" href="/manifest.json" />
+      <base href='kvarno.netlify.app/'/>
     </>
   );
 }
