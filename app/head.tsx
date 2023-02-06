@@ -5,6 +5,7 @@ export default function Head() {
     <>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <base href='kvarno.netlify.app/'/>
       <meta
         name="google-site-verification"
         content="UfExZvP8OMttLFbO1FiDBWJe9aKIqYcnaFQYu-nc3iY"
@@ -35,7 +36,6 @@ export default function Head() {
       <meta property="twitter:image" content="/logo.png" />
       <link rel="canonical" href="https://kvarno.netlify.app/" />
       <link rel="manifest" href="/manifest.json" />
-      <base href='kvarno.netlify.app/'/>
     </>
   );
 }
