@@ -21,8 +21,8 @@ function ColorMixer() {
         style={{ backgroundColor: firstColor }}
       >
         <div className="flex h-[200px] w-full items-center justify-center sm:h-[600px]">
-          <div className="relative mx-2 cursor-pointer my-2 rounded-lg border border-black bg-white px-2 py-1">
-            <label htmlFor="First Color" className="text-black cursor-pointer">
+          <div className="relative mx-2 my-2 cursor-pointer rounded-lg border border-black bg-white px-2 py-1">
+            <label htmlFor="First Color" className="cursor-pointer text-black">
               {firstColor}
             </label>
             <input

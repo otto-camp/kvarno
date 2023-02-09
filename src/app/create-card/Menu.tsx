@@ -1,26 +1,26 @@
 'use client';
 import { useState } from 'react';
-import { useCardContext } from '../../src/context/CardContext';
+import { useCardContext } from '../../context/CardContext';
 import { Disclosure } from '@headlessui/react';
 
-import ExtractCardModal from '#/components/CreateCard/ExtractCardModal';
-import BgColorSelect from '#/components/CreateCard/inputs/BgColorSelect';
-import BorderColors from '#/components/CreateCard/inputs/BorderColors';
-import BorderInput from '#/components/CreateCard/inputs/BorderInput';
-import BorderRadius from '#/components/CreateCard/inputs/BorderRadius';
-import HeightInput from '#/components/CreateCard/inputs/HeightInput';
+import ExtractCardModal from '../../components/CreateCard/ExtractCardModal';
+import BgColorSelect from '../../components/CreateCard/inputs/BgColorSelect';
+import BorderColors from '../../components/CreateCard/inputs/BorderColors';
+import BorderInput from '../../components/CreateCard/inputs/BorderInput';
+import BorderRadius from '../../components/CreateCard/inputs/BorderRadius';
+import HeightInput from '../../components/CreateCard/inputs/HeightInput';
 import WidthInput from '../../components/CreateCard/inputs/WidthInput';
 
-import TextAlignSelect from '#/components/CreateCard/inputs/TextAlignSelect';
-import TextColorSelect from '#/components/CreateCard/inputs/TextColorSelect';
-import TextInput from '#/components/CreateCard/inputs/TextInput';
-import TextDecorationSelect from '#/components/CreateCard/inputs/TextDecorationSelect';
-import TextDecorationStyleSelect from '#/components/CreateCard/inputs/TextDecorationStyleSelect';
-import TextDecorationColorSelect from '#/components/CreateCard/inputs/TextDecorationColorSelect';
+import TextAlignSelect from '../../components/CreateCard/inputs/TextAlignSelect';
+import TextColorSelect from '../../components/CreateCard/inputs/TextColorSelect';
+import TextInput from '../../components/CreateCard/inputs/TextInput';
+import TextDecorationSelect from '../../components/CreateCard/inputs/TextDecorationSelect';
+import TextDecorationStyleSelect from '../../components/CreateCard/inputs/TextDecorationStyleSelect';
+import TextDecorationColorSelect from '../../components/CreateCard/inputs/TextDecorationColorSelect';
 import TextDecorationThicknessInput from '../../components/CreateCard/inputs/TextDecorationThicknessInput';
-import TextUnderlineOffsetInput from '#/components/CreateCard/inputs/TextUnderlineOffsetInput';
-import TextSizeInput from '#/components/CreateCard/inputs/TextSizeInput';
-import TextWeightSelect from '#/components/CreateCard/inputs/TextWeightSelect';
+import TextUnderlineOffsetInput from '../../components/CreateCard/inputs/TextUnderlineOffsetInput';
+import TextSizeInput from '../../components/CreateCard/inputs/TextSizeInput';
+import TextWeightSelect from '../../components/CreateCard/inputs/TextWeightSelect';
 
 function Menu() {
   const [extractCardModal, setExtractCardModal] = useState(false);

@@ -2,11 +2,10 @@
 import expandHex from '#/src/libs/ExpandHexColor';
 import chroma from 'chroma-js';
 import invert from 'invert-color';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import Dice from '../../public/svg/Dice';
+import Dice from '../../../public/svg/Dice';
 
 export default function ColorPicker() {
   const [color, setColor] = useState('#FF00FF');
