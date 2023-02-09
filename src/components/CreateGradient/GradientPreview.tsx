@@ -1,4 +1,4 @@
-import { useGradientContext } from '../../src/context/GradientContext';
+import { useGradientContext } from '#/src/context/GradientContext';
 import { ConvertToJSS } from '#/src/libs/ConvertToJSS';
 function GradientPreview() {
   const {
