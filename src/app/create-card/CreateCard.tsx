@@ -1,5 +1,5 @@
 'use client';
-import { CardContext } from '#/context/CardContext';
+import { CardContext } from '#/src/context/CardContext';
 import { useState } from 'react';
 import Card from '../../components/CreateCard/Card';
 import Menu from './Menu';

@@ -1,4 +1,4 @@
-import { useGradientContext } from '#/context/GradientContext';
+import { useGradientContext } from '#/src/context/GradientContext';
 import { Dialog, Transition } from '@headlessui/react';
 import { toPng } from 'html-to-image';
 import { Fragment, RefObject, useCallback, useState } from 'react';

@@ -1,5 +1,5 @@
-import { useGradientContext } from '../../context/GradientContext';
-import { ConvertToJSS } from '#/libs/ConvertToJSS';
+import { useGradientContext } from '../../src/context/GradientContext';
+import { ConvertToJSS } from '#/src/libs/ConvertToJSS';
 function GradientPreview() {
   const {
     firstColor,

@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { useCardContext } from '../../context/CardContext';
+import { useCardContext } from '../../src/context/CardContext';
 import { Disclosure } from '@headlessui/react';
 
 import ExtractCardModal from '#/components/CreateCard/ExtractCardModal';

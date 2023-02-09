@@ -1,11 +1,12 @@
 'use client';
-import expandHex from '#/libs/ExpandHexColor';
+import expandHex from '#/src/libs/ExpandHexColor';
 import chroma from 'chroma-js';
 import invert from 'invert-color';
+import Image from 'next/image';
 import Link from 'next/link';
-
 import { useMemo, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import Dice from '../../public/svg/Dice';
 
 export default function ColorPicker() {
   const [color, setColor] = useState('#FF00FF');
@@ -23,9 +24,16 @@ export default function ColorPicker() {
   return (
     <section>
       <div className="relative w-full rounded-lg bg-white">
+        <label
+          htmlFor="inputColor"
+          className="absolute top-0 left-0 text-transparent"
+        >
+          Input Color
+        </label>
         <input
           type="text"
           value={color}
+          id="inputColor"
           onChange={(e) => setColor(e.target.value)}
           className="w-fit rounded-lg py-4 px-4 text-xl font-medium text-black outline-none"
         />
@@ -33,11 +41,17 @@ export default function ColorPicker() {
           className="absolute top-0 right-0 mr-2 mt-1.5 h-12 w-12 rounded-xl"
           style={{ backgroundColor: color }}
         >
+          <label
+            htmlFor="chooseColor"
+            className="absolute top-0 left-0 text-transparent"
+          >
+            Choose Color
+          </label>
           <input
             type="color"
             value={color}
             onChange={(e) => setColor(e.target.value)}
-            id="First Color"
+            id="chooseColor"
             className="opacity-0"
           />
         </div>
@@ -46,12 +60,12 @@ export default function ColorPicker() {
         className="relative my-6 flex h-[200px] items-center justify-center rounded-lg"
         style={{ backgroundColor: color }}
       >
-        <button onClick={randomColor} className="absolute top-0 right-0">
-          Random
+        <button onClick={randomColor} className="absolute top-2 right-2">
+          <Dice />
         </button>
         <CopyToClipboard text={color}>
           <h2
-            className="text-center text-3xl cursor-pointer font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+            className="cursor-pointer text-center text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
             style={{ color: colorInvert }}
             onClick={() => {
               setCopy(true);

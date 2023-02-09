@@ -1,4 +1,4 @@
-import { useCardContext } from '#/context/CardContext';
+import { useCardContext } from '#/src/context/CardContext';
 import { Dialog, Transition } from '@headlessui/react';
 import { Dispatch, Fragment, SetStateAction, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';

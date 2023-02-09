@@ -1,4 +1,4 @@
-import { getRandomHexColor } from '#/libs/GetRandomHexColor';
+import { getRandomHexColor } from '#/src/libs/GetRandomHexColor';
 import { Dispatch, SetStateAction } from 'react';
 
 function RandomButton({

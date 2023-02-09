@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://kvarno.netlify.app</loc>
+		<loc>https://kvarno.netlify.app/</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<url>
-		<loc>https://kvarno.netlify.app/color-mixer</loc>
+		<loc>https://kvarno.netlify.app/color-mixer/</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://kvarno.netlify.app/create-gradient</loc>
+		<loc>https://kvarno.netlify.app/create-gradient/</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://kvarno.netlify.app/color-picker</loc>
+		<loc>https://kvarno.netlify.app/color-picker/</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>

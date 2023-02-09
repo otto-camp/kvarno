@@ -1,7 +1,7 @@
 import ColorPicker from './ColorPicker';
 export default function Page() {
   return (
-    <main>
+    <main className="min-h-screen">
       <div className="my-6 md:my-12">
         <h1 className="text-center text-3xl font-bold sm:text-4xl  md:text-5xl">
           Color Picker

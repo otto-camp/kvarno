@@ -6,7 +6,7 @@ import DegreeInput from '#/components/CreateGradient/inputs/DegreeInput';
 import SecondColorSelect from '#/components/CreateGradient/inputs/SecondColorInput';
 import TypeInput from '#/components/CreateGradient/inputs/TypeInput';
 import RandomButton from '#/components/CreateGradient/RandomButton';
-import { GradientContext } from '#/context/GradientContext';
+import { GradientContext } from '#/src/context/GradientContext';
 import { useRef, useState } from 'react';
 import FirstColorSelect from '../../components/CreateGradient/inputs/FirstColorInput';
 
