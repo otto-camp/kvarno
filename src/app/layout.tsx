@@ -8,11 +8,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="business">
       <head />
-      <body className="overflow-y-scroll bg-gray-1100 p-4 text-white antialiased">
+      <body className="p-4 antialiased">
         <Header />
-        <div className="mx-auto max-w-6xl">{children}</div>
+        <div className="mx-auto max-w-6xl mt-28">{children}</div>
         <Footer />
       </body>
     </html>

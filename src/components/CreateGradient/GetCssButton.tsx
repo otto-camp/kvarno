@@ -55,13 +55,13 @@ function GetCssButton({ divRef }: { divRef: RefObject<HTMLDivElement> }) {
       <div className="mx-2 flex gap-4">
         <button
           onClick={() => setExtractGradientModal(true)}
-          className="w-1/2 rounded-lg border border-black bg-blue-700 py-2 px-4 font-bold text-white transition-colors hover:bg-blue-900 "
+          className="btn-primary btn flex-1 rounded-lg text-lg font-bold normal-case"
         >
           Get CSS
         </button>
         <button
           onClick={handleDownload}
-          className="w-1/2 rounded-lg border border-black bg-green-700 py-2 px-4 font-bold text-white transition-colors hover:bg-green-900 "
+          className="btn-secondary btn rounded-lg text-lg font-bold normal-case"
         >
           Download Image
         </button>

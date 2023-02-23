@@ -5,7 +5,7 @@ import invert from 'invert-color';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import Dice from '../../../public/svg/Dice';
+import Dice from '../../assets/svg/Dice';
 
 export default function ColorPicker() {
   const [color, setColor] = useState('#FF00FF');
