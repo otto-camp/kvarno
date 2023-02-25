@@ -19,7 +19,7 @@ export default function TextInput({
         type="text"
         id={name}
         defaultValue={value}
-        className="input input-bordered rounded-lg"
+        className="input-bordered input rounded-lg"
         onChange={(event) => setValue(event.target.value)}
       />
     </div>

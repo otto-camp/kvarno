@@ -59,7 +59,7 @@ export default function ColorPicker() {
         className="relative my-6 flex h-[200px] items-center justify-center rounded-lg"
         style={{ backgroundColor: color }}
       >
-        <button onClick={randomColor} className="absolute top-2 right-2">
+        <button aria-label='Get random color' onClick={randomColor} className="absolute top-2 right-2">
           <Dice />
         </button>
         <CopyToClipboard text={color}>

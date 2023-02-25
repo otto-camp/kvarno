@@ -1,9 +1,62 @@
 import chroma from 'chroma-js';
 import invert from 'invert-color';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import ColorConversationTable from './ColorConversationTable';
 import ColorShades from './ColorShades';
 import ColorTints from './ColorTints';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: any;
+}): Promise<Metadata> {
+  const color = await params.color;
+  return {
+    title: `${color} — Kvarno`,
+    description:
+      'Obtain valuable information about colors including color combinations, libraries for color matching, and conversions between RGB, HSB, HSL and other color models.',
+    alternates: {
+      canonical: `https://kvarno.netlify.app/color-picker/${color}`,
+    },
+    referrer: 'origin-when-cross-origin',
+    keywords: [
+      'Color Theory',
+      'color space',
+      'color value',
+      'color tone',
+      'color gradient',
+      'color intensity',
+      'color contrast',
+      'color format',
+      'color calculation',
+      'color representation',
+    ],
+    openGraph: {
+      description:
+        'Obtain valuable information about colors including color combinations, libraries for color matching, and conversions between RGB, HSB, HSL and other color models.',
+      url: `https://kvarno.netlify.app/color-picker/${color}`,
+      siteName: `${color} — Kvarno`,
+      images: [
+        {
+          url: '/logo.png',
+          width: 512,
+          height: 512,
+          alt: `${color} — Kvarno`,
+        },
+      ],
+      locale: 'en-US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${color} — Kvarno`,
+      description:
+        'Obtain valuable information about colors including color combinations.',
+      images: ['/logo.png'],
+    },
+  };
+}
 
 export default function Page({ params }: { params: { color: string } }) {
   const color = params.color;

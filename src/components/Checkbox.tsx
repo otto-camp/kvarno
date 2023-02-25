@@ -10,9 +10,9 @@ export default function Checkbox({
 }) {
   return (
     <div>
-      <label htmlFor={name}></label>
       <input
         type="checkbox"
+        aria-label={name}
         defaultChecked={value}
         className="checkbox"
         onChange={() => setValue(!value)}

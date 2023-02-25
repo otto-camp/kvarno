@@ -20,13 +20,13 @@ function Header() {
           />
         </Link>
         <nav className="flex items-center justify-center">
-          <div className="dropdown-end dropdown-hover dropdown">
+          <div className="dropdown-hover dropdown-end dropdown">
             <label
               tabIndex={0}
-              className="btn-ghost btn m-1 rounded-lg text-md md:text-xl normal-case"
+              className="text-md btn-ghost btn m-1 rounded-lg normal-case md:text-xl"
             >
               Components
-              <Arrow direction='down'/>
+              <Arrow direction="down" />
             </label>
             <ul
               tabIndex={0}
@@ -36,7 +36,7 @@ function Header() {
                 <li key={c.name}>
                   <Link
                     href={c.href}
-                    className="btn-ghost btn rounded-lg text-sm md:text-lg normal-case"
+                    className="btn-ghost btn rounded-lg text-sm normal-case md:text-lg"
                   >
                     {c.name}
                   </Link>
@@ -44,8 +44,6 @@ function Header() {
               ))}
             </ul>
           </div>
-          <Link href="/"></Link>
-          <Link href="/"></Link>
         </nav>
       </div>
     </header>

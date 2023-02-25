@@ -1,5 +1,5 @@
 const colors = require('tailwindcss/colors');
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,8 +11,8 @@ module.exports = {
   darkMode: 'media',
   theme: {
     screens: {
-      'xs': '420px',
-      ...defaultTheme.screens
+      xs: '420px',
+      ...defaultTheme.screens,
     },
     extend: {
       colors: {
@@ -80,5 +80,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui"), require("@tailwindcss/forms")],
+  plugins: [require('daisyui'), require('@tailwindcss/forms')],
 };

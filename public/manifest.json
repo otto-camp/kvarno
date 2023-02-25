@@ -27,21 +27,5 @@
   "background_color": "rgb(10,10,11)",
   "display": "standalone",
   "id": "/",
-  "start_url": "/",
-  "shortcuts": [
-    {
-      "name": "Create a Card",
-      "short_name": "Create Card",
-      "description": "Create a Card with multiple style options",
-      "url": "/create-card",
-      "icons": [{ "src": "/android-chrome-512x512.png", "sizes": "512x512" }]
-    },
-    {
-      "name": "Create a Gradient",
-      "short_name": "Create Gradient",
-      "description": "Create a linear or radial gradient",
-      "url": "/create-gradient",
-      "icons": [{ "src": "/android-chrome-512x512.png", "sizes": "512x512" }]
-    }
-  ]
+  "start_url": "/"
 }

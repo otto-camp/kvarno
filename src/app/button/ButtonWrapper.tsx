@@ -1,12 +1,13 @@
 'use client';
 
+import { ButtonContext } from '#/src/context/ButtonContext';
+import { getRandomHexColor } from '#/src/libs/GetRandomHexColor';
+import { useState } from 'react';
+import { useMount } from 'react-use';
 import ColorInput from '#/src/components/ColorInput';
 import GetCssButton from '#/src/components/GetCssButton';
 import NumberSlider from '#/src/components/NumberSlider';
 import TextInput from '#/src/components/TextInput';
-import { ButtonContext } from '#/src/context/ButtonContext';
-import { getRandomHexColor } from '#/src/libs/GetRandomHexColor';
-import { useState, useRef } from 'react';
 import Checkbox from '../../components/Checkbox';
 
 export default function ButtonWrapper() {
@@ -19,9 +20,9 @@ export default function ButtonWrapper() {
   const [borderRadius, setBorderRadius] = useState(0);
   const [width, setWidth] = useState(40);
   const [height, setHeight] = useState(10);
-  const [bgColor, setBgColor] = useState(getRandomHexColor());
+  const [bgColor, setBgColor] = useState('#864313');
 
-  const ref = useRef<HTMLButtonElement>();
+  useMount(() => setBgColor(getRandomHexColor()));
 
   return (
     <ButtonContext.Provider
@@ -95,7 +96,7 @@ export default function ButtonWrapper() {
           {/* Border */}
           <div className="flex justify-between">
             <h2 className="text-xl font-medium">Border</h2>
-            <Checkbox name="Button" value={border} setValue={setBorder} />
+            <Checkbox name="Border" value={border} setValue={setBorder} />
           </div>
           <hr className="my-2 border-white/50" />
           {border && (
@@ -122,7 +123,7 @@ export default function ButtonWrapper() {
             </div>
           )}
           <div className="mx-auto md:w-2/5">
-            <GetCssButton value={ref} />
+            <GetCssButton />
           </div>
         </div>
         <div className="flex flex-1 items-center justify-center p-4">
@@ -148,7 +149,6 @@ export default function ButtonWrapper() {
                     backgroundColor: bgColor,
                   }
             }
-            className="overflow-hidden text-clip"
           >
             {text}
           </button>
