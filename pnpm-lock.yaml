@@ -38,7 +38,6 @@ specifiers:
 dependencies:
   '@headlessui/react': 1.7.11_biqbaboplfbrettd7655fr4n2y
   '@heroicons/react': 1.0.6_react@18.2.0
-  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
   autoprefixer: 10.4.13_postcss@8.4.21
   chroma-js: 2.4.2
   daisyui: 2.51.0_gbtt6ss3tbiz4yjtvdr6fbrj44
@@ -56,6 +55,7 @@ dependencies:
   sharp: 0.31.3
 
 devDependencies:
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
   '@types/chroma-js': 2.4.0
   '@types/ms': 0.7.31
   '@types/node': 18.14.1
@@ -311,7 +311,7 @@ packages:
     dependencies:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.2.7_postcss@8.4.21
-    dev: false
+    dev: true
 
   /@types/chroma-js/2.4.0:
     resolution: {integrity: sha512-JklMxityrwjBTjGY2anH8JaTx3yjRU3/sEHSblLH1ba5lqcSh1LnImXJZO5peJfXyqKYWjHTGy4s5Wz++hARrw==}
@@ -2196,7 +2196,7 @@ packages:
   /mini-svg-data-uri/1.4.4:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
-    dev: false
+    dev: true
 
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
