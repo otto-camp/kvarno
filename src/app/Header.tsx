@@ -4,6 +4,10 @@ import logo from '#/public/logo.png';
 import Arrow from '../assets/svg/Arrow';
 
 const components = [{ name: 'Button', href: 'button' }];
+const colorTools = [
+  { name: 'Color Picker', href: 'color-picker' },
+  { name: 'Color Mixer', href: 'color-mixer' },
+];
 
 function Header() {
   return (
@@ -25,18 +29,42 @@ function Header() {
               tabIndex={0}
               className="text-md btn-ghost btn m-1 rounded-lg normal-case md:text-xl"
             >
+              Color Tools
+              <Arrow direction="down" />
+            </label>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu w-full rounded-lg bg-base-100 p-2 shadow"
+            >
+              {colorTools.map((c) => (
+                <li key={c.name} className="rounded-lg">
+                  <Link
+                    href={c.href}
+                    className="md:text-md btn-ghost btn justify-start text-sm normal-case"
+                  >
+                    {c.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="dropdown-hover dropdown-end dropdown">
+            <label
+              tabIndex={0}
+              className="text-md btn-ghost btn m-1 rounded-lg normal-case md:text-xl"
+            >
               Components
               <Arrow direction="down" />
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu menu-compact w-full bg-base-100 p-2 shadow"
+              className="dropdown-content menu rounded-box w-full bg-base-100 p-2 shadow"
             >
               {components.map((c) => (
                 <li key={c.name}>
                   <Link
                     href={c.href}
-                    className="btn-ghost btn rounded-lg text-sm normal-case md:text-lg"
+                    className="md:text-md btn-ghost btn justify-start text-sm normal-case"
                   >
                     {c.name}
                   </Link>

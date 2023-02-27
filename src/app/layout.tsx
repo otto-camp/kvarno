@@ -23,12 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="business">
+    <html lang="en" data-theme="bumblebee">
       <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <base href="kvarno.netlify.app/" />
       </head>
-      <body className="p-4 antialiased">
+      <body className="p-4 antialiased scroll-smooth">
         <Header />
         <div className="mx-auto mt-28 max-w-6xl">{children}</div>
         <Footer />

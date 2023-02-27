@@ -9,10 +9,8 @@ type GradientContext = {
   setFirstColorPosition: Dispatch<SetStateAction<number>>;
   secondColorPosition: number;
   setSecondColorPosition: Dispatch<SetStateAction<number>>;
-  degree: number;
-  setDegree: Dispatch<SetStateAction<number>>;
-  type: string;
-  setType: Dispatch<SetStateAction<string>>;
+  degree: number | string;
+  setDegree: Dispatch<SetStateAction<number | string>>;
 };
 
 export const GradientContext = createContext<GradientContext>({
@@ -26,8 +24,6 @@ export const GradientContext = createContext<GradientContext>({
   setSecondColorPosition: () => {},
   degree: 90,
   setDegree: () => {},
-  type: 'linear',
-  setType: () => {},
 });
 
 export const useGradientContext = () => useContext(GradientContext);

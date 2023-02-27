@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   referrer: 'origin-when-cross-origin',
   alternates: { canonical: 'https://kvarno.netlify.app/create-gradient' },
   keywords: [
-    ' gradient creation',
+    'gradient creation',
     'gradient maker',
     'gradient design',
     'gradient editor',
@@ -50,12 +50,12 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <main className="my-6">
+    <main className="my-6 min-h-screen">
       <div className="my-6 md:my-12">
         <h1 className="text-center text-3xl font-bold sm:text-4xl  md:text-5xl">
           Create Gradient
         </h1>
-        <p className="mx-auto mt-3 max-w-lg text-center text-lg text-gray-300">
+        <p className="mx-auto mt-3 max-w-lg text-center text-lg">
           Generate stunning gradient backgrounds with maximum compatibility CSS
           and 4k downloadable versions for your website. Upgrade your
           website&apos;s design with ease.

@@ -54,7 +54,7 @@ export default function GetCssButton() {
           <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full flex-col items-center justify-center p-4 text-center">
               <Transition
-                className="w-full flex justify-center"
+                className="flex w-full justify-center"
                 show={copied}
                 enter="transition-opacity duration-75"
                 enterFrom="opacity-0"
@@ -77,7 +77,7 @@ export default function GetCssButton() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-2/3  transform overflow-hidden rounded-md bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="transform  overflow-hidden rounded-md bg-gray-200 p-6 text-left align-middle shadow-xl transition-all md:w-2/3">
                   <SyntaxHighlighter
                     language={html}
                     wrapLongLines

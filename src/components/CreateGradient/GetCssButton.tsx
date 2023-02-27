@@ -11,7 +11,6 @@ function GetCssButton({ divRef }: { divRef: RefObject<HTMLDivElement> }) {
     firstColorPosition,
     secondColorPosition,
     degree,
-    type,
   } = useGradientContext();
   const [copied, setCopied] = useState(false);
   const [extractGradientModal, setExtractGradientModal] = useState(false);
@@ -36,23 +35,14 @@ function GetCssButton({ divRef }: { divRef: RefObject<HTMLDivElement> }) {
 
   let value = `
   background:${firstColor};
-  background: ${
-    type === 'linear'
-      ? `linear-gradient(${degree}deg,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);`
-      : `radial-gradient(circle,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);`
-  }
-  background:${
-    type === 'linear'
-      ? `-moz-linear-gradient(${degree}deg,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);
-    background: -webkit-linear-gradient(${degree}deg,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);`
-      : `-moz-radial-gradient(circle,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);
-    background: -webkit-radial-gradient(circle,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);`
-  }
+  background: ${`linear-gradient(${degree}deg,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);`}
+  background:${`-moz-linear-gradient(${degree}deg,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);
+      background: -webkit-linear-gradient(${degree}deg,${firstColor} ${firstColorPosition}%, ${secondColor} ${secondColorPosition}%);`}
   `;
 
   return (
     <>
-      <div className="mx-2 flex gap-4">
+      <div className="flex gap-4">
         <button
           onClick={() => setExtractGradientModal(true)}
           className="btn-primary btn flex-1 rounded-lg text-lg font-bold normal-case"
@@ -98,7 +88,7 @@ function GetCssButton({ divRef }: { divRef: RefObject<HTMLDivElement> }) {
                 <Dialog.Panel className="w-2/3  transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
                   <textarea
                     readOnly
-                    className="w-full resize-none rounded-lg bg-gray-700 p-2"
+                    className="w-full resize-none whitespace-pre-line rounded-lg p-2"
                     rows={6}
                     value={value}
                   />

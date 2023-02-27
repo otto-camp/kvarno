@@ -9,3 +9,23 @@
     margin: 0;
   }
 }
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 40px;
+  padding: 0;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 40px;
+  padding: 0;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}

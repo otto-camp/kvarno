@@ -2,21 +2,18 @@
 
 import GetCssButton from '../../components/CreateGradient/GetCssButton';
 import GradientPreview from '../../components/CreateGradient/GradientPreview';
-import DegreeInput from '../../components/CreateGradient/inputs/DegreeInput';
-import SecondColorSelect from '../../components/CreateGradient/inputs/SecondColorInput';
-import TypeInput from '../../components/CreateGradient/inputs/TypeInput';
-import RandomButton from '../../components/CreateGradient/RandomButton';
 import { GradientContext } from '#/src/context/GradientContext';
 import { useRef, useState } from 'react';
-import FirstColorSelect from '../../components/CreateGradient/inputs/FirstColorInput';
+import PlainColorPicker from '../../components/PlainColorPicker';
+import PlainNumberSlider from '#/src/components/PlainNumberSlider';
+import RandomButton from '#/src/components/CreateGradient/RandomButton';
 
 function CreateGradient() {
   const [firstColor, setFirstColor] = useState('#6D6C83');
   const [secondColor, setSecondColor] = useState('#3B7F99');
-  const [firstColorPosition, setFirstColorPosition] = useState(0);
-  const [secondColorPosition, setSecondColorPosition] = useState(100);
-  const [degree, setDegree] = useState(90);
-  const [type, setType] = useState('linear');
+  const [firstColorPosition, setFirstColorPosition] = useState<number>(0);
+  const [secondColorPosition, setSecondColorPosition] = useState<number>(100);
+  const [degree, setDegree] = useState<string | number>(90);
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -33,39 +30,92 @@ function CreateGradient() {
         setSecondColorPosition,
         degree,
         setDegree,
-        type,
-        setType,
       }}
     >
-      <div className="grid grid-cols-1 gap-8 text-black lg:grid-cols-2">
-        <div ref={ref}>
+      <section className="relative">
+        <div ref={ref} className="absolute inset-0 isolate">
           <GradientPreview />
         </div>
-        <div className="rounded-lg bg-gray-200 p-2">
-          <FirstColorSelect
-            firstColor={firstColor}
-            setFirstColor={setFirstColor}
-            firstColorPosition={firstColorPosition}
-            setFirstColorPosition={setFirstColorPosition}
-          />
-          <SecondColorSelect
-            secondColor={secondColor}
-            setSecondColor={setSecondColor}
-            secondColorPosition={secondColorPosition}
-            setSecondColorPosition={setSecondColorPosition}
-          />
-          <div className="mb-2 sm:grid sm:grid-cols-3">
-            <TypeInput type={type} setType={setType} />
-            <DegreeInput degree={degree} setDegree={setDegree} type={type} />
+        <div className="grid grid-cols-2">
+          <div className="isolate flex flex-col items-center gap-4 p-4">
+            <PlainColorPicker
+              name="First Color"
+              value={firstColor}
+              setValue={setFirstColor}
+            />
+            <PlainNumberSlider
+              name="First Color Position"
+              value={firstColorPosition}
+              defaultValue={firstColorPosition}
+              setValue={setFirstColorPosition}
+            />
           </div>
-          <div className="flex flex-col items-stretch gap-4">
+          <div className="isolate flex flex-col items-center gap-4 p-4">
+            <PlainColorPicker
+              name="Second Color"
+              value={secondColor}
+              setValue={setSecondColor}
+            />
+            <PlainNumberSlider
+              name="Second Color Position"
+              value={secondColorPosition}
+              defaultValue={secondColorPosition}
+              setValue={setSecondColorPosition}
+            />
+          </div>
+          {/* <div className="flex flex-col gap-4 xs:flex-row">
+          
+          <ColorInput
+          name="First Color"
+              value={firstColor}
+              setValue={setFirstColor}
+            />
+
+            <Select
+              name="First Color Position"
+              value={options}
+              defaultValue={firstColorPosition}
+              setValue={setFirstColorPosition}
+            />
+          </div>
+          <div className="flex flex-col gap-4 xs:flex-row">
+            <div className="flex-1">
+              <ColorInput
+                name="Second Color"
+                value={secondColor}
+                setValue={setSecondColor}
+              />
+            </div>
+            <Select
+              name="Second Color Position"
+              value={options}
+              defaultValue={secondColorPosition}
+              setValue={setSecondColorPosition}
+            />
+          </div>
+          <div className="flex items-center gap-4">
+            <Select
+              name="Degree"
+              value={degreeOptions}
+              setValue={setDegree}
+              defaultValue={degree}
+            />
             <RandomButton
               setFirstColor={setFirstColor}
               setSecondColor={setSecondColor}
             />
-            <GetCssButton divRef={ref} />
           </div>
+          <div className="flex flex-col items-stretch gap-4">
+            <GetCssButton divRef={ref} />
+          </div> */}
         </div>
+      </section>
+      <div className="mt-12 rounded-lg py-4">
+        <RandomButton
+          setFirstColor={setFirstColor}
+          setSecondColor={setSecondColor}
+        />
+        <GetCssButton divRef={ref} />
       </div>
     </GradientContext.Provider>
   );
